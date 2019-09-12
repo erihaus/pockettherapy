@@ -65,9 +65,11 @@ ul {
   height: 140px;
   border-radius: 15px;
 }
+/*
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+*/
 body {
 background-repeat: no-repeat;
 background-size:cover;
