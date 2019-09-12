@@ -1,0 +1,224 @@
+p {
+	font-family: 'Yantramanav', sans-serif;
+	font-size: 20px;
+}
+b {
+       font-family: 'Yantramanav', sans-serif;
+        font-size: 30px;
+}
+.submission {
+        font-family: 'Yantramanav', sans-serif;
+        position: absolute;
+        font-size: 30px;
+}
+
+#second {
+        margin-top: 800px;
+        position: absolute;
+        margin-left: 950px;
+        -ms-transform: rotate(-10deg); /* IE 9 */
+        -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
+        transform: rotate(-10deg);
+        width: 500px;
+        height: 10px;
+}
+#third {
+        margin-top: 280px;
+        margin-left: 900px;
+        position: absolute;
+        -ms-transform: rotate(7deg); /* IE 9 */
+        -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+        transform: rotate(7deg);
+        width: 500px;
+        height: 10px;
+}
+#fourth {
+        margin-top: 400px;
+        position: absolute;
+        margin-left: 10px;
+        -ms-transform: rotate(-7deg); /* IE 9 */
+        -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+        transform: rotate(-7deg);
+        width: 500px;
+        height: 10px;
+
+}
+#fifth {
+margin-top: -400px;
+        position: fixed;
+        margin-left: 1100px;
+        -ms-transform: rotate(-5deg); /* IE 9 */
+        -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
+        transform: rotate(-5deg);
+        width: 500px;
+        height: 10px;
+}
+#sixth {
+margin-top: 70px;
+        position: absolute;
+        margin-left: 900px;
+        -ms-transform: rotate(-9deg); /* IE 9 */
+        -webkit-transform: rotate(-9deg); /* Chrome, Safari, Opera */
+        transform: rotate(-9deg);
+        width: 500px;
+        height: 10px;
+}
+#seventh {
+margin-top: 550px;
+        position: absolute;
+        margin-left: 150px;
+        -ms-transform: rotate(1deg); /* IE 9 */
+        -webkit-transform: rotate(1deg); /* Chrome, Safari, Opera */
+        transform: rotate(1deg);
+        width: 500px;
+        height: 10px;
+}
+#eighth {
+    margin-top: 400px;
+        position: absolute;
+        margin-left: 880px;
+        -ms-transform: rotate(1deg); /* IE 9 */
+        -webkit-transform: rotate(1deg); /* Chrome, Safari, Opera */
+        transform: rotate(1deg);
+        width: 500px;
+        height: 10px;
+}
+#ninth {
+     margin-top: 200px;
+        position: absolute;
+        margin-left: 20px;
+        -ms-transform: rotate(-1deg); /* IE 9 */
+        -webkit-transform: rotate(-1deg); /* Chrome, Safari, Opera */
+        transform: rotate(-1deg);
+        width: 500px;
+        height: 10px;
+}
+#tenth {
+     margin-bottom: 10px;
+        position: absolute;
+        margin-left: 690px;
+        -ms-transform: rotate(1deg); /* IE 9 */
+        -webkit-transform: rotate(1deg); /* Chrome, Safari, Opera */
+        transform: rotate(1deg);
+        width: 500px;
+        height: 10px;
+}
+#eleventh {
+     margin-top: 720px;
+        position: absolute;
+        margin-left: 610px;
+        -ms-transform: rotate(1deg); /* IE 9 */
+        -webkit-transform: rotate(1deg); /* Chrome, Safari, Opera */
+        transform: rotate(1deg);
+        width: 500px;
+        height: 10px;
+}
+#twelfth {
+     margin-top: 680px;
+        position: absolute;
+        margin-left: 70px;
+        -ms-transform: rotate(-6deg); /* IE 9 */
+        -webkit-transform: rotate(-6deg); /* Chrome, Safari, Opera */
+        transform: rotate(-6deg);
+        width: 500px;
+        height: 10px;
+}
+#thirteenth{
+     margin-top: 620px;
+        position: absolute;
+        margin-left: 700px;
+        -ms-transform: rotate(-6deg); /* IE 9 */
+        -webkit-transform: rotate(-6deg); /* Chrome, Safari, Opera */
+        transform: rotate(-6deg);
+        width: 500px;
+        height: 10px;
+}
+.window {
+    margin-left: 17%;
+    margin-top: 10%;
+    height: 500px;
+    text-align: center;
+vertical-align: middle;
+line-height: 500px; 
+	font-size: 1.5vw;
+    font-family: 'Yantramanav', sans-serif;
+    width: 1000px;
+    z-index: 0;
+overflow: none;
+    border: 1px dotted #ddd;
+    background-color: white;
+    position: fixed;
+    transition:font-size 12s;
+     -moz-transition:font-size 12s; /* Firefox 4 */
+     -webkit-transition:font-size 12s; /* Safari and Chrome */
+     -o-transition:font-size 12s;
+
+}
+#first {
+        top: 50px;
+        position: absolute;
+        left: 140px;
+        -ms-transform: rotate(7deg); /* IE 9 */
+        -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+        transform: rotate(7deg);
+        width: 500px;
+        font-family: 'Yantramanav', sans-serif;
+    font-size: 21px;
+        height: 10px;
+
+}
+form {
+        position: absolute;
+       left: 550px;
+        top: 300px;
+       
+}
+input {
+        margin-left:75px;
+}
+    input[type="submit"] {
+
+    width: 80px; /* width of image */
+    height: 25px; /* height of image */
+    border: solid 1px #ddd;
+    border-radius: 15px;
+    font-size: 15px;
+    color: black;
+    background: #ddd;
+    font-family: 'system-ui';
+    position: relative;
+    margin-left: -45px;
+    bottom: 8px;
+    left: 48%;
+}
+#submit {
+
+    width: 80px; /* width of image */
+    height: 25px; /* height of image */
+    border: solid 1px #ddd;
+    border-radius: 15px;
+    font-size: 15px;
+    color: black;
+    background: #ddd;
+    font-family: 'arial';
+    position: absolute;
+    left: 650px;
+    top: 400px;
+}
+body {
+    height: 100%;
+    width: 100%;
+}
+    button {
+        width: 70px;
+        height: 35px;
+        font-size: 18px;
+        display: block;
+       margin-top: 0px;
+       float: right;
+       margin-right: 0px;
+        font-family: 'system-ui';
+        color: #ddd;
+        border: none;
+        background-color: transparent;
+ }

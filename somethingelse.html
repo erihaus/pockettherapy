@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html>
+  <head>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100|Open+Sans:300|Work+Sans:100|Yantramanav:100" rel="stylesheet">
+    <link href="anxious.css" rel="stylesheet">
+    <script src="all.js"></script>
+    <script src="somethingelse.js"></script>
+     <script src="click.js"></script>
+    <meta charset="UTF-8">
+    <script src="jquery-3.2.1.min.js"></script>
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <title></title>
+    <style>
+
+    .hi {
+    width: 80%;
+    height: 240px;
+        position:absolute; /*it can be fixed too*/
+        left:0; right:0;
+        top:0; bottom:0;
+        margin:auto;
+        border: transparent;
+        border-radius: 20px;
+
+        /*this to solve "the content will not be cut when the window is smaller than the content": */
+        max-width:100%;
+        max-height:100%;
+        overflow:auto;
+    }
+    #top {
+        color: white;
+        font-family: 'Yantramanav', sans-serif;
+        font-size: 20px;
+    }
+    h1 {
+text-align: center;
+font-family: 'Yantramanav', sans-serif;
+margin-left: 3.5%;
+color: black;
+border: 1px white solid;
+border-radius: 20px;
+font-size: 40px;
+    }
+    .js-example-basic-multiple {
+      width: 500px;
+        border: solid 1px #ddd;
+        margin-left: 30%;
+      height: 88px;
+      text-align: center;
+        font-size: 19px;
+        font-family: 'Yantramanav', sans-serif;
+    }
+    input[type="submit"] {
+    background: #ddd;
+    width: 80px; /* width of image */
+    height: 25px; /* height of image */
+    border: solid 1px #ddd;
+    border-radius: 15px;
+    font-size: 20px;
+    color: black;
+    font-family: 'Yantramanav', sans-serif;
+    position: relative;
+    bottom: 8px;
+    left: 48%;
+}
+p {
+   font-family: 'Yantramanav', sans-serif;
+   font-size: 23px;
+   color: black;
+}
+
+    button {
+      width: 120px;
+      height: 35px;
+      font-size: 18px;
+        display: block;
+       margin-top: 0px;
+       float: right;
+       margin-right: 0px;
+        font-family: 'Yantramanav', sans-serif;
+        color: black;
+        border: none;
+        background-color: transparent;
+ }
+#grad {
+  background-color: white;
+}
+ul {
+  font-family: 'Yantramanav', sans-serif;
+        font-size: 20px;
+        position: absolute;
+        list-style-type: circle;
+        margin-top: 40px;
+        margin-left: -30px;
+        color: #9a9a9a;
+}
+#heading {
+  height: auto;
+  z-index: 12;
+  margin-top: -15px;
+  position: absolute;
+  width: 250px;
+  margin-left: 41%;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    text-align: center;
+    height: 200px;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    right: 880px;
+}
+.nature {
+ position: absolute;
+  margin-top: 50px;
+  border: #ddd 1px solid;
+  margin-left: 1255px;
+  color: black;
+  padding: 5px;
+  text-align: center;
+  width: 140px;
+  height: 140px;
+  border-radius: 15px;
+}
+#nature {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 30px;
+  font-size: 30px;
+}
+#color {
+   position: absolute;
+  margin-top: 50px;
+  margin-left: 40px;
+  font-size: 30px;
+}
+.color {
+   position: absolute;
+  margin-top: 50px;
+  border: #ddd 1px solid;
+  margin-left: 1055px;
+  color: black;
+  padding: 5px;
+  text-align: center;
+  width: 140px;
+  height: 140px;
+  border-radius: 15px;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+body {
+background-repeat: no-repeat;
+background-size:cover;
+}
+#background {
+  position: absolute;
+ margin-left: 90%;
+ border-radius: 15px;
+ background-color: #f4f4f4;
+ height: 110px;
+
+}
+.welcome {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 2;
+}
+.chooseNature {
+  z-index: 3;
+  background-color: white;
+  height: 500px;
+  width: 600px;
+  position: absolute;
+  border-radius: 15px;
+  border: 1px #ddd solid;
+  margin-left: 30%;
+  margin-top: 10%;
+}
+#audioplayer{
+    width: 480px;
+    height: 60px;
+    position: absolute;
+    margin-left: 46%;
+    margin-top: 2%;
+  border: none;
+}
+#footer {
+  position: static;
+  margin-top: 650px;
+  margin-left: 710px;
+  color: #ddd;
+  font-size: 20px;
+}
+.exit {
+  width: 30px;
+  margin-left: 10px;
+  margin-top: 5px;
+  position: absolute;
+  height: 30px;
+}
+#pButton{
+    height:180px; 
+    position: absolute;
+    width: 180px;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    float:left;
+    border-radius: 15px;
+    margin-left: -700px;
+    border: 1px transparent solid;
+    margin-top: -60px;
+}
+
+.play{background: url('https://image.ibb.co/dVYUVQ/play_1.png'); }
+.pause{background: url('https://image.ibb.co/jdRiqQ/pause_1.png') ;}
+#play {
+  position: absolute;
+  margin-top: 6px;
+  margin-left: 12px;
+  color: black;
+}
+#photos {
+  width: 500px;
+  height: auto;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 25px;
+  padding: 20px;
+}
+#timeline{
+    width: 0px;
+    height: 0px;
+    margin-top: 20px;
+    float: left;
+    border-radius: 15px;
+    background: #f2f2f2;
+    opacity: 0.8;
+}
+#playhead{
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    margin-top: 1px;
+    background: rgba(0,0,0,.3);
+
+}
+#arrow {
+  position: absolute;
+  margin-top: 400px;
+  margin-left: 300px;
+  font-family: 'Yantramanav', sans-serif;
+        font-size: 70px;
+        color: #ddd;
+}
+*:focus {
+    outline: 0;
+}
+.chooseColor {
+  width: 500px;
+  position: absolute;
+  height: 530px;
+  z-index: 5;
+  margin-top: 100px;
+  margin-left: 470px;
+  background-color: white;
+  border: 1px #ddd solid;
+  border-radius: 15px;
+}
+#skip {
+  height: 37px;
+  width: 37px;
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.logo {
+  position: absolute;
+  width: auto;
+  height: 470px;
+  margin-top: 70px;
+  margin-left: 29%;
+}
+#changeBack {
+  background-color: #f4f4f4;
+}
+.option {
+  background-color: #fcc3a3;
+  border-radius: 15px;
+  height: 100px;
+  width: 100px;
+  z-index: 10;
+  margin: 5px;
+  padding: 5px;
+}
+#hex {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 5px;
+  color: white;
+  font-size: 20px;
+}
+.option2 {
+background-color: #f09f9c;
+border-radius: 15px;
+  height: 100px;
+  width: 100px;
+  z-index: 10;
+  margin: 5px;
+  padding: 5px;
+}
+.option3 {
+  background-color: #dda6c1;
+  border-radius: 15px;
+  height: 100px;
+  width: 100px;
+  z-index: 10;
+  margin: 5px;
+  padding: 5px;
+}
+.option4 {
+  background-color: #c9e9f6;
+  border-radius: 15px;
+  height: 100px;
+  width: 100px;
+  z-index: 10;
+  margin: 5px;
+  padding: 5px;
+}
+.option5 {
+  background-color: #D34A5C;
+  border-radius: 15px;
+  height: 100px;
+  width: 100px;
+  z-index: 10;
+  margin: 5px;
+  padding: 5px;
+}
+.option6 {
+  background-color: #F77159;
+  border-radius: 15px;
+  height: 100px;
+  width: 100px;
+  z-index: 10;
+  margin: 5px;
+  padding: 5px;
+}
+.option7 {
+  background-color: #F6965C;
+  border-radius: 15px;
+  height: 100px;
+  width: 100px;
+  z-index: 10;
+  margin: 5px;
+  padding: 5px;
+}
+.option8 {
+  background-color: #A52875;
+  border-radius: 15px;
+  height: 100px;
+  width: 100px;
+  z-index: 10;
+  margin: 5px;
+  padding: 5px;
+}
+.option9 {
+  background-color: #D1DBBD;
+  border-radius: 15px;
+  height: 100px;
+  width: 100px;
+  z-index: 10;
+  margin: 5px;
+  padding: 5px;
+}
+.option10 {
+  background-color: #91AA9D;
+  border-radius: 15px;
+  height: 100px;
+  width: 100px;
+  z-index: 10;
+  margin: 5px;
+  padding: 5px;
+}
+.option11 {
+  background-color: #3E606F;
+  border-radius: 15px;
+  height: 100px;
+  width: 100px;
+  z-index: 10;
+  margin: 5px;
+  padding: 5px;
+}
+.option12 {
+  background-color: #5B6870;
+  border-radius: 15px;
+  height: 100px;
+  width: 100px;
+  z-index: 10;
+  margin: 5px;
+  padding: 5px;
+}
+.option13 {
+  background-color: #D5FBFF;
+  border-radius: 15px;
+  height: 100px;
+  width: 100px;
+  z-index: 10;
+  margin: 5px;
+  padding: 5px;
+}
+.option14 {
+  background-color:   #CCCCFF;
+  border-radius: 15px;
+  height: 100px;
+  width: 100px;
+  z-index: 10;
+  margin: 5px;
+  padding: 5px;
+}
+.option15 {
+  background-color: #9090C0;
+  border-radius: 15px;
+  height: 100px;
+  width: 100px;
+  z-index: 10;
+  margin: 5px;
+  padding: 5px;
+}
+.option16 {
+  background-color: #59D8E5;
+  border-radius: 15px;
+  height: 100px;
+  width: 100px;
+  z-index: 10;
+  margin: 5px;
+  padding: 5px;
+}
+.getstarted {
+  height: 70px;
+  width: auto;
+  position: absolute;
+  margin-left: 47%;
+  margin-top: 350px;
+}
+.intro {
+  position: absolute;
+  width: 50%;
+margin-left: 370px;
+margin-top: 220px;
+  height: 50%;
+  background-color: white;
+  z-index: 4;
+  border: 1px #ddd solid;
+  border-radius: 30px;
+  }
+.logo2 {
+height: 300px;
+margin-left: 175px;
+width: auto;
+position: absolute;
+}
+.page2 {
+  font-family:'Yantramanav', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  margin-top: 50px;
+}
+.important {
+  color: #778899;
+}
+.page3 {
+  font-family:'Yantramanav', sans-serif;
+  font-size: 20px;
+  position: absolute;
+  margin-left: 20px;
+}
+.backgroundopen {
+  position: absolute;
+  margin-left: 280px;
+  margin-top: -100px;
+}
+.page4 {
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 35px;
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.choosefeeling {
+  height: 150px;
+  margin-left: 220px;
+  width: auto;
+}
+.skip {
+  font-size: 30px;
+  color: #ddd;
+  position: absolute;
+  margin-top: 400px;
+  margin-left: 650px;
+}
+.page5 {
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 30px;
+  position: absolute;
+  margin-left: 270px;
+  margin-top: 100px;
+}
+.feelings {
+  font-size: 25px;
+  position: absolute;
+  margin-left: 2px;
+}
+#page6 {
+  font-size: 25px;
+  font-family: 'Yantramanav', sans-serif;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 80px;
+  text-align: left;
+}
+.inputbox {
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 300px;
+}
+#page7 {
+position: absolute;
+margin-top: 80px;
+margin-left: 50px;
+font-family: 'Yantramanav', sans-serif;
+font-size: 25px;
+}
+.worry {
+  margin-top: 150px;
+  margin-left: 305px;
+  position: absolute;
+  border-radius: 25px;
+  padding: 10px;
+          -ms-transform: rotate(-2deg); /* IE 9 */
+        -webkit-transform: rotate(-2deg); /* Chrome, Safari, Opera */
+        transform: rotate(-2deg);
+  border-color: #ddd;
+}
+.page8 {
+  text-align: center;
+  margin-left: 200px;
+  margin-top: 180px;
+  position: absolute;
+}
+#page8 {
+  font-size: 22px;
+
+}
+.page9 {
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 25px;
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 100px;
+}
+.quotephoto {
+  position: absolute;
+  margin-top: -300px;
+  margin-left: -200px;
+            -ms-transform: rotate(5deg); /* IE 9 */
+        -webkit-transform: rotate(5deg); /* Chrome, Safari, Opera */
+        transform: rotate(5deg);
+}
+.somethingelse2 {
+  position: absolute;
+  margin-left: -10px;
+  margin-top: 50px;
+}
+.iamloved {
+  position: absolute;
+  margin-left: 50px;
+}
+#page10 {
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 20px;
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 25px;
+}
+.goback {
+  position: absolute;
+  height: 35px;
+  width: auto;
+  margin-top: 410px;
+  margin-left: 44%;
+}
+    #submit2 {
+    width: 80px; /* width of image */
+    height: 25px; /* height of image */
+    border: solid 1px #ddd;
+    border-radius: 15px;
+    font-size: 15px;
+    color: black;
+    background: #ddd;
+    font-family: 'arial';
+    position: absolute;
+    left: 475px;
+    top: 430px;
+}
+.submission2 {
+        font-family: 'Yantramanav', sans-serif;
+        position: absolute;
+        font-size: 60px;
+}
+#text2 {
+  position: absolute;
+  margin-left: -75px;
+  margin-top: 15px;
+}
+#selfLove {
+  position: absolute;
+  margin-left: -380px;
+  width: 700px;
+  margin-top: -200px;
+}
+.selfLove {
+    margin-left: 17%;
+    margin-top: 10%;
+    height: 500px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Yantramanav', sans-serif;
+    width: 1000px;
+    z-index: 8;
+    background-color: white;
+    padding: none;
+    border: 1px dotted #ddd;
+    position: fixed;
+    transition:font-size 12s;
+     -moz-transition:font-size 12s; /* Firefox 4 */
+     -webkit-transition:font-size 12s; /* Safari and Chrome */
+     -o-transition:font-size 12s;
+   }
+    </style>
+  </head>
+  <body>
+      <a href="index.html">
+    <img id="heading" src="https://preview.ibb.co/j9nsX5/logo3.png">
+  </a>
+        <div class="chooseColor">
+  <img class="exit"src="https://image.ibb.co/etaaLQ/X.jpg"><br></br>
+  <table>
+    <tr>
+      <td> <div class="option"> <p id="hex"> Peach </p></div></td>
+      <td> <div class="option2"> <p id="hex"> Coral </p></div></td>
+      <td> <div class="option3"> <p id="hex"> Mauve </p></div></td>
+      <td> <div class="option4"> <p id="hex"> Baby </p></div></td>
+    </tr>
+    <tr>
+      <td> <div class="option8"> <p id="hex"> Magenta </p></div></td>
+      <td> <div class="option5"> <p id="hex"> Cherry </p></div></td>
+      <td> <div class="option6"> <p id="hex"> Carrot </p></div></td>
+      <td> <div class="option7"> <p id="hex"> Tangerine </p></div></td>
+    </tr>
+    <tr>
+      <td> <div class="option9"> <p id="hex"> Laurel</p></div></td>
+      <td> <div class="option10"> <p id="hex"> Sage </p></div></td>
+      <td> <div class="option11"> <p id="hex"> Prussian </p></div></td>
+      <td> <div class="option12"> <p id="hex"> Slate </p></div></td>
+    </tr>
+    <tr>
+      <td> <div class="option16" > <p id="hex"> Maya </p></div></td>
+      <td> <div class="option13"> <p id="hex"> Sky </p></div></td>
+      <td> <div class="option14"> <p id="hex"> Periwinkle </p></div></td>
+      <td> <div class="option15"> <p id="hex"> Cool </p></div></td>
+    </tr>
+  </table>
+</div>
+  <div class="chooseNature">
+    <img class="exit"src="https://image.ibb.co/etaaLQ/X.jpg">
+<img id="photos" src="https://preview.ibb.co/bMPpC5/cliff.jpg" onclick="changeBackground()">
+<span onclick="change()" id="arrow"> &#8250;</span>
+  </div>
+  <audio id="music" preload="true">
+            <source id="audioSource" type="audio/mpeg">
+    </audio>
+     <div class="tooltip">
+    <div id="audioplayer">
+    <button id="pButton" class="play"></button>
+    <div id="timeline">
+    <div id="playhead"></div>
+  </div>
+    <span class="tooltiptext" id="playSpan">  <p id="play"> Play Music
+    <ul id="list">
+      <li><a id = "1" data-value="http://k003.kiwi6.com/hotlink/5aw2tc3nv1/satie1.mp3">Gnossienne</a></li>
+      <li><a id = "3" data-value="http://k003.kiwi6.com/hotlink/3cdj19s5yu/gymnopedie.mp3">Gymnopedie</a></li>
+      <li><a id = "4" data-value="http://k003.kiwi6.com/hotlink/o6kztd8pu0/Soaring.mp3">Soaring</a></li>
+      <li><a id = "6" data-value="http://k003.kiwi6.com/hotlink/oo4egyik3e/immersed.mp3">Immersed</a></li>
+      <li><a id = "7" data-value="http://k003.kiwi6.com/hotlink/uic804ngud/freshair.mp3">Fresh Air</a></li>
+      <li><a id = "8" data-value="http://k003.kiwi6.com/hotlink/nb90bzvc24/arabesque.mp3">Arabesque</a></li>
+    </ul>
+</p>
+
+    </span>
+</div>
+<!--  <img id="skip" onclick="skipMusic()" src="https://preview.ibb.co/kmiVV5/Skip.jpg"/> -->
+</div>
+<button type="button" id="background" onclick="backgroundYo()"><p id="changeBack">Background</p></button><br></br><br></br>
+<div class="nature" onclick ="chooseBackground()" ><p id="nature"> Nature</p> </div>
+<div class="color"><p onclick="changeColor()" id="color"> Color </p> </div>
+    <form>
+<b>What is concerning you? </b> <br></br>
+  <input type="text" id="text">
+  <br><br>
+</form>
+     <button id="submit">Submit</button>
+     <div id="first"class="quotes">
+    <p id="quotes1"> </p>
+  </div>
+  <div id="second" class="quotes">
+    <p id="quotes2"></p>
+  </div>
+  <div id="third" class="quotes">
+    <p id="quotes3"></p>
+  </div>
+  <div id="fourth" class="quotes">
+    <p id="quotes4"></p>
+  </div>
+    <div id="fifth"class="quotes">
+    <p id="quotes5"></p>
+  </div>
+  <div id="sixth"class="quotes">
+    <p id="quotes6"></p>
+  </div>
+  <div id="seventh"class="quotes">
+    <p id="quotes7"></p>
+  </div>
+    <div id="eighth"class="quotes">
+    <p id="quotes8"></p>
+  </div>
+    <div id="ninth"class="quotes">
+    <p id="quotes9"></p>
+  </div>
+    <div id="tenth"class="quotes">
+    <p id="quotes10"></p>
+  </div>
+    <div id="eleventh"class="quotes">
+    <p id="quotes11"></p>
+  </div>
+    <div id="twelfth"class="quotes">
+    <p id="quotes12"></p>
+  </div>
+   <div id="thirteenth"class="quotes">
+    <p id="quotes13"></p>
+  </div>
+  <div class="selfLove">
+    <form id="selfLove">
+<b> Say something nice to yourself. <br></br> You deserve the encouragement. </b> <br></br>
+How about:<br>
+<i> I can do this. </i> <br>
+<i> Others' opinions don't matter.</i> <br>
+  <input type="text" id="text2">
+  <br><br>
+</form>
+<button id="submit2">Submit</button>
+  </div>
+  <script>
+  $(".selfLove").hide();
+
+  $( document ).ready(function() {
+        if (backgroundColor != null) {
+    document.body.style.backgroundColor = backgroundColor;
+  $(".hi").css("background-color", backgroundColor);
+  } else if (backgroundImage != null) {
+    document.body.style.backgroundImage = backgroundImage;
+  $(".hi").css("background", "transparent");
+  $("h1").css("border", "none");
+  }
+});
+$(".chooseColor").hide();
+$(".chooseNature").hide();
+$('select').select2();
+$("#nature").hide();
+$(".nature").hide();
+  $(".color").hide();
+$("#color").hide();
+$(".js-example-basic-multiple").select2();
+$(".page2").hide();
+$(".page3").hide();
+$(".page4").hide();
+$(".page5").hide();
+$(".page6").hide();
+$(".page7").hide();
+$(".page8").hide();
+$(".page9").hide();
+$(".page10").hide();
+var z=0;
+var pageNames = ["page1", "page2", "page3", "page4", "page5", "page6", "page7", "page8", "page9", "page10"];
+var i = 0;
+var songs = ["http://k003.kiwi6.com/hotlink/5aw2tc3nv1/satie1.mp3", "http://k003.kiwi6.com/hotlink/o6kztd8pu0/Soaring.mp3", "http://k003.kiwi6.com/hotlink/3cdj19s5yu/gymnopedie.mp3", "http://k003.kiwi6.com/hotlink/oo4egyik3e/immersed.mp3", "http://k003.kiwi6.com/hotlink/nb90bzvc24/arabesque.mp3", "http://k003.kiwi6.com/hotlink/uic804ngud/freshair.mp3"];
+var photos = ["https://preview.ibb.co/bMPpC5/cliff.jpg", "https://preview.ibb.co/dfBfKk/clouds.jpg", "https://preview.ibb.co/jtsnzk/dock.jpg", "https://preview.ibb.co/msThX5/hotair.jpg", "https://preview.ibb.co/mKmQkQ/mountains.jpg", "https://preview.ibb.co/cgqUC5/ocean.jpg", "https://preview.ibb.co/jgbfKk/sunset.jpg", "https://preview.ibb.co/mr0kkQ/tropical.jpg", "https://preview.ibb.co/doyGs5/hotairballoonnight.jpg"];
+  $(".js-example-basic-multiple").select2();
+var music = document.getElementById('music'); // id for audio element
+var duration = music.duration; // Duration of audio clip, calculated here for embedding purposes
+var pButton = document.getElementById('pButton'); // play button
+var playhead = document.getElementById('playhead'); // playhead
+var timeline = document.getElementById('timeline'); // timeline
+
+// timeline width adjusted for playhead
+var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
+
+// play button event listenter
+pButton.addEventListener("click", play);
+
+// timeupdate event listener
+music.addEventListener("timeupdate", timeUpdate, false);
+
+// makes timeline clickable
+timeline.addEventListener("click", function(event) {
+    moveplayhead(event);
+    music.currentTime = duration * clickPercent(event);
+}, false);
+
+// returns click as decimal (.77) of the total timelineWidth
+function clickPercent(event) {
+    return (event.clientX - getPosition(timeline)) / timelineWidth;
+}
+
+// makes playhead draggable
+playhead.addEventListener('mousedown', mouseDown, false);
+window.addEventListener('mouseup', mouseUp, false);
+
+// Boolean value so that audio position is updated only when the playhead is released
+var onplayhead = false;
+
+// mouseDown EventListener
+function mouseDown() {
+    onplayhead = true;
+    window.addEventListener('mousemove', moveplayhead, true);
+    music.removeEventListener('timeupdate', timeUpdate, false);
+}
+
+// mouseUp EventListener
+// getting input from all mouse clicks
+function mouseUp(event) {
+    if (onplayhead == true) {
+        moveplayhead(event);
+        window.removeEventListener('mousemove', moveplayhead, true);
+        // change current time
+        music.currentTime = duration * clickPercent(event);
+        music.addEventListener('timeupdate', timeUpdate, false);
+    }
+    onplayhead = false;
+}
+// mousemove EventListener
+// Moves playhead as user drags
+function moveplayhead(event) {
+    var newMargLeft = event.clientX - getPosition(timeline);
+
+    if (newMargLeft >= 0 && newMargLeft <= timelineWidth) {
+        playhead.style.marginLeft = newMargLeft + "px";
+    }
+    if (newMargLeft < 0) {
+        playhead.style.marginLeft = "0px";
+    }
+    if (newMargLeft > timelineWidth) {
+        playhead.style.marginLeft = timelineWidth + "px";
+    }
+}
+
+// timeUpdate
+// Synchronizes playhead position with current point in audio
+function timeUpdate() {
+    var playPercent = timelineWidth * (music.currentTime / duration);
+    playhead.style.marginLeft = playPercent + "px";
+    if (music.currentTime == duration) {
+        pButton.className = "";
+        pButton.className = "play";
+    }
+}
+
+//Play and Pause
+jQuery('a').on('click', function(){
+  var songName = $(this).data("value");
+var source = document.getElementById("audioSource");
+source.src = songName;
+music.load();
+music.play();
+        document.getElementById("play").style.position = "absolute";
+        document.getElementById("play").style.marginLeft = "-40px";
+        document.getElementById("play").innerHTML = "Pause Music";
+        document.getElementById("play").style.width = "200px";
+        // remove play, add pause
+        pButton.className = "";
+        pButton.className = "pause";
+
+});
+function play() {
+    // start music
+    if (music.paused) {
+        music.play();
+        document.getElementById("play").style.position = "absolute";
+        document.getElementById("play").style.marginLeft = "-40px";
+        document.getElementById("play").innerHTML = "Pause Music";
+        document.getElementById("play").style.width = "200px";
+        // remove play, add pause
+        pButton.className = "";
+        pButton.className = "pause";
+    } else { // pause music
+        music.pause();
+        // remove pause, add play
+        document.getElementById("play").style.width = "100px";
+        document.getElementById("play").innerHTML = "Play Music";
+  document.getElementById("play").style.position = "absolute";
+  document.getElementById("play").style.marginTop = "6px";
+  document.getElementById("play").style.marginLeft = "10px";
+        pButton.className = "";
+        pButton.className = "play";
+    }
+}
+
+// Gets audio file duration
+music.addEventListener("canplaythrough", function() {
+    duration = music.duration;
+}, false);
+
+// getPosition
+// Returns elements left position relative to top-left of viewport
+function getPosition(el) {
+    return el.getBoundingClientRect().left;
+    console.log(el.getBoundingClientRect().left);
+}
+function chooseBackground() {
+  /* here SHOW the two options: choose background from wallpapers OR choose a color from color picker as your background --> when clicked, the color will go through the changeBackground function. */
+  $(".chooseColor").hide();
+  $(".chooseNature").show();
+
+}
+function backgroundYo() {
+  if ($(".nature").is(":visible")) {
+  $(".nature").hide();
+  $(".color").hide();
+  $("#color").hide();
+  $("#nature").hide();
+  }
+  else {
+    $(".nature").show();
+  $(".color").show();
+  $("#color").show();
+  $("#nature").show();
+  }
+}
+
+var change= function() {
+  console.log(i);
+  if(i<8) {
+i++;
+$("#photos").attr('src', photos[i]);
+} else {
+  i=0;
+  $("#photos").attr('src', photos[i]);
+}
+};
+function changeColor() {
+  $(".chooseColor").show();
+  $(".chooseNature").hide();
+
+}
+jQuery('.option').on('click', function(){
+  var hexCode = $(this).css("background-color");
+  changeBackgroundColor(hexCode);
+});
+jQuery('.option2').on('click', function(){
+  var hexCode = $(this).css("background-color");
+  changeBackgroundColor(hexCode);
+});
+jQuery('.option3').on('click', function(){
+  var hexCode = $(this).css("background-color");
+  changeBackgroundColor(hexCode);
+});
+jQuery('.option4').on('click', function(){
+  var hexCode = $(this).css("background-color");
+  changeBackgroundColor(hexCode);
+});
+jQuery('.option5').on('click', function(){
+  var hexCode = $(this).css("background-color");
+  changeBackgroundColor(hexCode);
+});
+jQuery('.option6').on('click', function(){
+  var hexCode = $(this).css("background-color");
+  changeBackgroundColor(hexCode);
+});
+jQuery('.option7').on('click', function(){
+  var hexCode = $(this).css("background-color");
+  changeBackgroundColor(hexCode);
+});
+jQuery('.option8').on('click', function(){
+  var hexCode = $(this).css("background-color");
+  changeBackgroundColor(hexCode);
+});
+jQuery('.option9').on('click', function(){
+  var hexCode = $(this).css("background-color");
+  changeBackgroundColor(hexCode);
+});
+jQuery('.option10').on('click', function(){
+  var hexCode = $(this).css("background-color");
+  changeBackgroundColor(hexCode);
+});
+jQuery('.option11').on('click', function(){
+  var hexCode = $(this).css("background-color");
+  changeBackgroundColor(hexCode);
+});
+jQuery('.option12').on('click', function(){
+  var hexCode = $(this).css("background-color");
+  changeBackgroundColor(hexCode);
+});
+jQuery('.option13').on('click', function(){
+  var hexCode = $(this).css("background-color");
+  changeBackgroundColor(hexCode);
+});
+jQuery('.option14').on('click', function(){
+  var hexCode = $(this).css("background-color");
+  changeBackgroundColor(hexCode);
+});
+jQuery('.option15').on('click', function(){
+  var hexCode = $(this).css("background-color");
+  changeBackgroundColor(hexCode);
+});
+jQuery('.option16').on('click', function(){
+  var hexCode = $(this).css("background-color");
+  changeBackgroundColor(hexCode);
+});
+
+$( ".exit" ).click(function() {
+  $(".chooseColor").hide();
+  $(".chooseNature").hide();
+});
+$( ".getstarted" ).click(function() {
+if (z!=9) {
+       $(".getstarted").css("height", "35px");
+  $(".getstarted").css("margin-top", "410px");
+  $(".getstarted").css("margin-left", "49%")
+  $("." + pageNames[z]).hide();
+  z++;
+  $("." + pageNames[z]).show();
+$(".logo2").hide();
+}
+else {
+  $(".intro").hide();
+}
+});
+function skip() {
+  $(".intro").hide();
+  $("." + pageNames[z]).hide();
+}
+function back() {
+  $("." + pageNames[z]).hide();
+  $("." + pageNames[z -1]).show();
+}
+  </script>
+  </body>
+</html>

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<!--Artificial intelligence: THIS APP IS LIKE A VIRTUAL/COMPUTER THERAPIST!!! -->
+<!--be able to change background-->
+<!--Add questions BEFORE quotes like: Why are you depressed? What symptoms of depression are you feeling? Or describe your depression.. what are you insecure of? Why are you stressed? ... -->
+
+<head>
+
+  <title> What You Need to Hear </title>
+  <script src="jquery-3.2.1.min.js"></script>
+  <link href="untitled.css" rel="stylesheet">
+  <script src="all.js"></script>
+  <link href="index.css" rel="stylesheet">
+  <script src="untitled.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100|Open+Sans:300|Work+Sans:100|Yantramanav:100"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+</head>
+
+<body id="grad">
+  <img id="heading" src="https://preview.ibb.co/j9nsX5/logo3.png">
+  <div class="intro">
+    <div class="page1">
+      <img class="logo2" src="https://preview.ibb.co/gQTPx5/logo1.jpg">
+    </div>
+    <div class="page2">
+      <b>Important:</b><br>
+      Pocket Therapy is <b>not</b> a replacement for help from a mental health professional. <br>If you need someone to
+      talk to, you can find nearby therapists, psychologists, and conselors <a class="important"
+        href="https://therapists.psychologytoday.com/rms/?tr=Hdr_Brand">here</a>. <br>
+      <b> If you are experiencing suicidal thoughts, <br> <i>please</i> call the following number for confidential and
+        free help: <Br>
+        1-800-273-8255<br>
+        or<br> visit the following website for a confidential and free online chat with a specialist: <br>
+        <a class="important" href="http://chat.suicidepreventionlifeline.org/GetHelp/LifelineChat.aspx">Online
+          Chat</a><br>
+        You are <i>not</i> alone. </b>
+    </div>
+    <div class="page3">
+      Choose a background image or color by clicking here:
+      <img style="height: 70%; width: auto; margin-top: 20px" src="https://image.ibb.co/c92gQQ/backgroundclick.png">
+      <br></br>
+      Click on <b>'Color'</b> for a background <br> color.<br></br>
+      <img class="backgroundopen" src="https://image.ibb.co/fVQ1QQ/background_Open.png">
+      Click <b>'Nature'</b> for a background <br>image.
+    </div>
+    <div class="page4">
+      Tell us how you're feeling. <br>
+      Choose from:<br>
+      <ul>
+        <li>Depressed</li>
+        <li>Unmotivated</li>
+        <li>Stressed</li>
+        <li>Anxious</li>
+        <li>Insecure</li>
+        <li>Something else</li>
+      </ul>
+      <img class="choosefeeling" src="https://image.ibb.co/f5VCH5/choosefeeling.png">
+    </div>
+
+    <div class="page5">
+      If you are feeling:
+      <ul class="feelings">
+        <li>Depressed</li>
+        <li>Unmotivated</li>
+        <li>Stressed</li>
+        <li>Anxious</li>
+        <li>Insecure</li>...
+      </ul>
+    </div>
+    <div class="page6">
+      <img class="inputbox" src="https://image.ibb.co/kfyoqQ/anxiety.png">
+      <p id="page6">Enter your concerns<br> or worries into<br> the input box. <br></br>None of your entries<br>will be
+        seen by anyone<br> except for <i>you</i>.</p>
+    </div>
+    <div class="page7">
+      <p id="page7">
+        When you click the 'Submit' button,<br>
+        your worry will <br>
+        appear on the screen.<br>
+        <b>Click</b> on it to see it<br>
+        fade away and disappear. <br></br>
+        <b>Hover</b> over it <br>
+        to shrink it to nothing.<br>
+      </p>
+      <img class="worry" src="https://image.ibb.co/hvKdqQ/worry.png">
+    </div>
+    <div class="page8">
+      <p id="page8" style="margin-top: -100px;">
+        When you click the 'Submit' button,<br>
+        a reassuring message might appear.<br></br>
+        <b>Click</b> on it for the quote<br>
+        to appear in a larger window.<br>
+        Then <b>hover</b> the message<br>
+        to see it grow.
+      </p>
+    </div>
+    <div class="page9">
+      If you are experiencing an emotion that wasn't listed,<br>
+      select <b>'Something else'</b>.<br>
+    </div>
+    <div class="page10">
+      <p id="page10">
+        After entering your worry, you are given the chance to say something nice to yourself.<br>
+        It's important to love yourself and have a positive self image.<br>
+        Enter something to assure yourself and it will appear on the screen.<br>
+        <b>Click</b> on your positive message to yourself and it will grow.
+      </p>
+    </div>
+    <p class="skip" onclick="skip()">Skip</p>
+    <img class="getstarted" src="https://image.ibb.co/nmN6AQ/getstarted.jpg">
+  </div>
+  <div class="chooseColor">
+    <img class="exit" src="https://image.ibb.co/etaaLQ/X.jpg"><br></br>
+    <table>
+      <tr>
+        <td>
+          <div class="option">
+            <p id="hex"> Peach </p>
+          </div>
+        </td>
+        <td>
+          <div class="option2">
+            <p id="hex"> Coral </p>
+          </div>
+        </td>
+        <td>
+          <div class="option3">
+            <p id="hex"> Mauve </p>
+          </div>
+        </td>
+        <td>
+          <div class="option4">
+            <p id="hex"> Baby </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="option8">
+            <p id="hex"> Magenta </p>
+          </div>
+        </td>
+        <td>
+          <div class="option5">
+            <p id="hex"> Cherry </p>
+          </div>
+        </td>
+        <td>
+          <div class="option6">
+            <p id="hex"> Carrot </p>
+          </div>
+        </td>
+        <td>
+          <div class="option7">
+            <p id="hex"> Tangerine </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="option9">
+            <p id="hex"> Laurel</p>
+          </div>
+        </td>
+        <td>
+          <div class="option10">
+            <p id="hex"> Sage </p>
+          </div>
+        </td>
+        <td>
+          <div class="option11">
+            <p id="hex"> Prussian </p>
+          </div>
+        </td>
+        <td>
+          <div class="option12">
+            <p id="hex"> Slate </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="option16">
+            <p id="hex"> Maya </p>
+          </div>
+        </td>
+        <td>
+          <div class="option13">
+            <p id="hex"> Sky </p>
+          </div>
+        </td>
+        <td>
+          <div class="option14">
+            <p id="hex"> Periwinkle </p>
+          </div>
+        </td>
+        <td>
+          <div class="option15">
+            <p id="hex"> Cool </p>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="chooseNature">
+    <img class="exit" src="https://image.ibb.co/etaaLQ/X.jpg">
+    <img id="photos" src="https://preview.ibb.co/bMPpC5/cliff.jpg" onclick="changeBackground()">
+    <span onclick="change()" id="arrow"> &#8250;</span>
+  </div>
+  <audio id="music" preload="true">
+    <source id="audioSource" type="audio/mpeg">
+  </audio>
+  <div class="tooltip">
+    <div id="audioplayer">
+      <button id="pButton" class="play"></button>
+      <div id="timeline">
+        <div id="playhead"></div>
+      </div>
+      <span class="tooltiptext" id="playSpan">
+        <p id="play"> Play Music
+          <ul id="list">
+            <li><a id="1" data-value="http://k003.kiwi6.com/hotlink/5aw2tc3nv1/satie1.mp3">Gnossienne</a></li>
+            <li><a id="3" data-value="http://k003.kiwi6.com/hotlink/3cdj19s5yu/gymnopedie.mp3">Gymnopedie</a></li>
+            <li><a id="4" data-value="http://k003.kiwi6.com/hotlink/o6kztd8pu0/Soaring.mp3">Soaring</a></li>
+            <li><a id="6" data-value="http://k003.kiwi6.com/hotlink/oo4egyik3e/immersed.mp3">Immersed</a></li>
+            <li><a id="7" data-value="http://k003.kiwi6.com/hotlink/uic804ngud/freshair.mp3">Fresh Air</a></li>
+            <li><a id="8" data-value="http://k003.kiwi6.com/hotlink/nb90bzvc24/arabesque.mp3">Arabesque</a></li>
+          </ul>
+        </p>
+
+      </span>
+    </div>
+    <!--  <img id="skip" onclick="skipMusic()" src="https://preview.ibb.co/kmiVV5/Skip.jpg"/> -->
+  </div>
+  <button type="button" id="background" onclick="backgroundYo()">
+    <p id="changeBack">Background</p>
+  </button><br></br><br></br>
+  <div class="nature" onclick="chooseBackground()">
+    <p id="nature"> Nature</p>
+  </div>
+  <div class="color">
+    <p onclick="changeColor()" id="color"> Color </p>
+  </div>
+
+  <!--make this a link?-->
+  <!-- Jquery NOT successfully implemented ... FIX -->
+  <div class="hi">
+    <label for="id_label_multiple">
+      <h1> How are you feeling?</h1>
+    </label>
+    <div class="select">
+      <select class="js-example-basic-multiple" id="id_label_multiple" multiple="multiple">
+        <option value="Depressed">Depressed</option>
+        <option value="Unmotivated">Unmotivated</option>
+
+        <option value="Stressed">Stressed</option>
+        <option value="Anxious">Anxious</option>
+        <option value="Insecure">Insecure</option>
+        <option value="Something else">Something else</option>
+      </select>
+    </div>
+    <br><br>
+    <input type="submit" onclick="submitClicked()">
+  </div>
+  <p id="footer">Contact us at: pockettherapyinfo@gmail.com </p>
+  <script>
+    /*$(".intro").hide();*/
+    $(".chooseColor").hide();
+    $(".chooseNature").hide();
+    $('select').select2();
+    $("#nature").hide();
+    $(".nature").hide();
+    $("#background").hide();
+    $(".color").hide();
+    $("#color").hide();
+    $(".js-example-basic-multiple").select2();
+  </script>
+
+  <script>
+    $(".page2").hide();
+    $(".page3").hide();
+    $(".page4").hide();
+    $(".page5").hide();
+    $(".page6").hide();
+    $(".page7").hide();
+    $(".page8").hide();
+    $(".page9").hide();
+    $(".page10").hide();
+    var z = 0;
+    var pageNames = ["page1", "page2", "page3", "page4", "page5", "page6", "page7", "page8", "page9", "page10"];
+    var i = 0;
+    var songs = ["http://k003.kiwi6.com/hotlink/5aw2tc3nv1/satie1.mp3", "http://k003.kiwi6.com/hotlink/o6kztd8pu0/Soaring.mp3", "http://k003.kiwi6.com/hotlink/3cdj19s5yu/gymnopedie.mp3", "http://k003.kiwi6.com/hotlink/oo4egyik3e/immersed.mp3", "http://k003.kiwi6.com/hotlink/nb90bzvc24/arabesque.mp3", "http://k003.kiwi6.com/hotlink/uic804ngud/freshair.mp3"];
+    var photos = ["https://preview.ibb.co/bMPpC5/cliff.jpg", "https://preview.ibb.co/dfBfKk/clouds.jpg", "https://preview.ibb.co/jtsnzk/dock.jpg", "https://preview.ibb.co/msThX5/hotair.jpg", "https://preview.ibb.co/mKmQkQ/mountains.jpg", "https://preview.ibb.co/cgqUC5/ocean.jpg", "https://preview.ibb.co/jgbfKk/sunset.jpg", "https://preview.ibb.co/mr0kkQ/tropical.jpg", "https://preview.ibb.co/doyGs5/hotairballoonnight.jpg"];
+    $(".js-example-basic-multiple").select2();
+    var music = document.getElementById('music'); // id for audio element
+    var duration = music.duration; // Duration of audio clip, calculated here for embedding purposes
+    var pButton = document.getElementById('pButton'); // play button
+    var playhead = document.getElementById('playhead'); // playhead
+    var timeline = document.getElementById('timeline'); // timeline
+
+    // timeline width adjusted for playhead
+    var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
+
+    // play button event listenter
+    pButton.addEventListener("click", play);
+
+    // timeupdate event listener
+    music.addEventListener("timeupdate", timeUpdate, false);
+
+    // makes timeline clickable
+    timeline.addEventListener("click", function (event) {
+      moveplayhead(event);
+      music.currentTime = duration * clickPercent(event);
+    }, false);
+
+    // returns click as decimal (.77) of the total timelineWidth
+    function clickPercent(event) {
+      return (event.clientX - getPosition(timeline)) / timelineWidth;
+    }
+
+    // makes playhead draggable
+    playhead.addEventListener('mousedown', mouseDown, false);
+    window.addEventListener('mouseup', mouseUp, false);
+
+    // Boolean value so that audio position is updated only when the playhead is released
+    var onplayhead = false;
+
+    // mouseDown EventListener
+    function mouseDown() {
+      onplayhead = true;
+      window.addEventListener('mousemove', moveplayhead, true);
+      music.removeEventListener('timeupdate', timeUpdate, false);
+    }
+
+    // mouseUp EventListener
+    // getting input from all mouse clicks
+    function mouseUp(event) {
+      if (onplayhead == true) {
+        moveplayhead(event);
+        window.removeEventListener('mousemove', moveplayhead, true);
+        // change current time
+        music.currentTime = duration * clickPercent(event);
+        music.addEventListener('timeupdate', timeUpdate, false);
+      }
+      onplayhead = false;
+    }
+    // mousemove EventListener
+    // Moves playhead as user drags
+    function moveplayhead(event) {
+      var newMargLeft = event.clientX - getPosition(timeline);
+
+      if (newMargLeft >= 0 && newMargLeft <= timelineWidth) {
+        playhead.style.marginLeft = newMargLeft + "px";
+      }
+      if (newMargLeft < 0) {
+        playhead.style.marginLeft = "0px";
+      }
+      if (newMargLeft > timelineWidth) {
+        playhead.style.marginLeft = timelineWidth + "px";
+      }
+    }
+
+    // timeUpdate
+    // Synchronizes playhead position with current point in audio
+    function timeUpdate() {
+      var playPercent = timelineWidth * (music.currentTime / duration);
+      playhead.style.marginLeft = playPercent + "px";
+      if (music.currentTime == duration) {
+        pButton.className = "";
+        pButton.className = "play";
+      }
+    }
+
+    //Play and Pause
+    jQuery('a').on('click', function () {
+      var songName = $(this).data("value");
+      var source = document.getElementById("audioSource");
+      source.src = songName;
+      music.load();
+      music.play();
+      document.getElementById("play").style.position = "absolute";
+      document.getElementById("play").style.marginLeft = "-40px";
+      document.getElementById("play").innerHTML = "Pause Music";
+      document.getElementById("play").style.width = "200px";
+      // remove play, add pause
+      pButton.className = "";
+      pButton.className = "pause";
+
+    });
+    function play() {
+      // start music
+      if (music.paused) {
+        music.play();
+        document.getElementById("play").style.position = "absolute";
+        document.getElementById("play").style.marginLeft = "-40px";
+        document.getElementById("play").innerHTML = "Pause Music";
+        document.getElementById("play").style.width = "200px";
+        // remove play, add pause
+        pButton.className = "";
+        pButton.className = "pause";
+      } else { // pause music
+        music.pause();
+        // remove pause, add play
+        document.getElementById("play").style.width = "100px";
+        document.getElementById("play").innerHTML = "Play Music";
+        document.getElementById("play").style.position = "absolute";
+        document.getElementById("play").style.marginTop = "6px";
+        document.getElementById("play").style.marginLeft = "10px";
+        pButton.className = "";
+        pButton.className = "play";
+      }
+    }
+
+    // Gets audio file duration
+    music.addEventListener("canplaythrough", function () {
+      duration = music.duration;
+    }, false);
+
+    // getPosition
+    // Returns elements left position relative to top-left of viewport
+    function getPosition(el) {
+      return el.getBoundingClientRect().left;
+      console.log(el.getBoundingClientRect().left);
+    }
+    function chooseBackground() {
+      /* here SHOW the two options: choose background from wallpapers OR choose a color from color picker as your background --> when clicked, the color will go through the changeBackground function. */
+      $(".chooseColor").hide();
+      $(".chooseNature").show();
+
+    }
+    function backgroundYo() {
+      if ($(".nature").is(":visible")) {
+        $(".nature").hide();
+        $(".color").hide();
+        $("#color").hide();
+        $("#nature").hide();
+      }
+      else {
+        $(".nature").show();
+        $(".color").show();
+        $("#color").show();
+        $("#nature").show();
+      }
+    }
+
+    var change = function () {
+      console.log(i);
+      if (i < 8) {
+        i++;
+        $("#photos").attr('src', photos[i]);
+      } else {
+        i = 0;
+        $("#photos").attr('src', photos[i]);
+      }
+    };
+    function changeColor() {
+      $(".chooseColor").show();
+      $(".chooseNature").hide();
+
+    }
+    jQuery('.option').on('click', function () {
+      var hexCode = $(this).css("background-color");
+      changeBackgroundColor(hexCode);
+    });
+    jQuery('.option2').on('click', function () {
+      var hexCode = $(this).css("background-color");
+      changeBackgroundColor(hexCode);
+    });
+    jQuery('.option3').on('click', function () {
+      var hexCode = $(this).css("background-color");
+      changeBackgroundColor(hexCode);
+    });
+    jQuery('.option4').on('click', function () {
+      var hexCode = $(this).css("background-color");
+      changeBackgroundColor(hexCode);
+    });
+    jQuery('.option5').on('click', function () {
+      var hexCode = $(this).css("background-color");
+      changeBackgroundColor(hexCode);
+    });
+    jQuery('.option6').on('click', function () {
+      var hexCode = $(this).css("background-color");
+      changeBackgroundColor(hexCode);
+    });
+    jQuery('.option7').on('click', function () {
+      var hexCode = $(this).css("background-color");
+      changeBackgroundColor(hexCode);
+    });
+    jQuery('.option8').on('click', function () {
+      var hexCode = $(this).css("background-color");
+      changeBackgroundColor(hexCode);
+    });
+    jQuery('.option9').on('click', function () {
+      var hexCode = $(this).css("background-color");
+      changeBackgroundColor(hexCode);
+    });
+    jQuery('.option10').on('click', function () {
+      var hexCode = $(this).css("background-color");
+      changeBackgroundColor(hexCode);
+    });
+    jQuery('.option11').on('click', function () {
+      var hexCode = $(this).css("background-color");
+      changeBackgroundColor(hexCode);
+    });
+    jQuery('.option12').on('click', function () {
+      var hexCode = $(this).css("background-color");
+      changeBackgroundColor(hexCode);
+    });
+    jQuery('.option13').on('click', function () {
+      var hexCode = $(this).css("background-color");
+      changeBackgroundColor(hexCode);
+    });
+    jQuery('.option14').on('click', function () {
+      var hexCode = $(this).css("background-color");
+      changeBackgroundColor(hexCode);
+    });
+    jQuery('.option15').on('click', function () {
+      var hexCode = $(this).css("background-color");
+      changeBackgroundColor(hexCode);
+    });
+    jQuery('.option16').on('click', function () {
+      var hexCode = $(this).css("background-color");
+      changeBackgroundColor(hexCode);
+    });
+
+    $(".exit").click(function () {
+      $(".chooseColor").hide();
+      $(".chooseNature").hide();
+    });
+    $(".getstarted").click(function () {
+      if (z != 9) {
+        $(".getstarted").css("height", "35px");
+        $(".getstarted").css("margin-top", "350px");
+        $(".getstarted").css("margin-left", "49%")
+        $("." + pageNames[z]).hide();
+        z++;
+        $("." + pageNames[z]).show();
+        $(".logo2").hide();
+      }
+      else {
+        $(".intro").hide();
+      }
+    });
+    function skip() {
+      $(".intro").hide();
+      $("." + pageNames[z]).hide();
+    }
+    function back() {
+      $("." + pageNames[z]).hide();
+      $("." + pageNames[z - 1]).show();
+    }
+  </script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCQoehzz1JI90dQ9wlyLBGgp98K9BGRFvI",
+      authDomain: "pocket-therapy-c49a7.firebaseapp.com",
+      databaseURL: "https://pocket-therapy-c49a7.firebaseio.com",
+      projectId: "pocket-therapy-c49a7",
+      storageBucket: "",
+      messagingSenderId: "592383851836",
+      appId: "1:592383851836:web:6abba86c77c82b2607f239"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+</body>
+
+</html>
