@@ -574,18 +574,32 @@
       messagingSenderId: "592383851836",
       appId: "1:592383851836:web:6abba86c77c82b2607f239"
     };
+    // Get a reference to the database service
+    var database = firebase.database();
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     var provider = new firebase.auth.GoogleAuthProvider();
+    function writeUserData(userId, name, email) {
+      firebase.database().ref('users/' + userId).set({
+        username: name,
+        email: email,
+        pastEmotions: null
+      });
+
+    }
     function signIn() {
       firebase.auth().signInWithPopup(provider).then(function (result) {
         // This gives you a Google Access Token. You can use it to access the Google API.
         var token = result.credential.accessToken;
         // The signed-in user info.
         var user = result.user;
+        var id = user.uid;
+        var name = user.displayName;
+        var emailVerified = user.emailVerified;
         var header = document.getElementsByName("h1");
         header.style.fontSize = "20px";
         header.textContent = "Hi, " + String(user) + "! How are you feeling?";
+        writeUserData(id, name, emailVerified)
         // ...
       }).catch(function (error) {
         // Handle Errors here.
