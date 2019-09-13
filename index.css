@@ -7,6 +7,16 @@ ul {
         margin-left: -30px;
         color: #9a9a9a;
 }
+#signIn {
+  background-color: rgb(175, 175, 175);
+  border-radius: 5px;
+  color: white;
+  height: 60px;
+  width: 120px;
+  border: 1px solid rgb(160, 160, 160);
+  font-weight: bold;
+  font-size: 28px;
+}
 #heading {
   height: auto;
   z-index: 12;
@@ -417,7 +427,7 @@ position: absolute;
 }
 .skip {
   font-size: 30px;
-  color: #ddd;
+  color: black;
   position: absolute;
   margin-top: 400px;
   margin-left: 650px;
