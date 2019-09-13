@@ -583,6 +583,9 @@
         var token = result.credential.accessToken;
         // The signed-in user info.
         var user = result.user;
+        var header = document.getElementsByName("h1");
+        header.style.fontSize = "20px";
+        header.textContent = "Hi, " + String(user) + "! How are you feeling?";
         // ...
       }).catch(function (error) {
         // Handle Errors here.
