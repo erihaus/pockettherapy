@@ -590,6 +590,10 @@
     firebase.auth().onAuthStateChanged(function (user) {
       if (user) {
         console.log("signed in!");
+        var name = user.displayName;
+        var header = document.getElementsByName("h1");
+        header.style.fontSize = "20px";
+        header.textContent = "Hi, " + String(user) + "! How are you feeling?";
       } else {
         // No user is signed in.
       }
@@ -605,9 +609,7 @@
         var emailVerified = user.emailVerified;
         //writeUserData(id, name, emailVerified)
 
-        var header = document.getElementsByName("h1");
-        header.style.fontSize = "20px";
-        header.textContent = "Hi, " + String(user) + "! How are you feeling?";
+
 
         // ...
       }).catch(function (error) {
