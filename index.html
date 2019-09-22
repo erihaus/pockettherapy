@@ -591,7 +591,7 @@
       if (user) {
         console.log("signed in!");
         var name = user.displayName;
-        var header = document.getElementsByName("h1");
+        var header = document.getElementsByTagName("h1");
         header.style.fontSize = "20px";
         header.textContent = "Hi, " + String(user) + "! How are you feeling?";
       } else {
