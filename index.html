@@ -581,12 +581,6 @@
     // Get a reference to the database service
     var database = firebase.database();
 
-    function writeUserData(userId, name, email) {
-      database.ref('users/' + userId).set({
-        username: name,
-        email: email
-      });
-    }
 
     firebase.auth().onAuthStateChanged(function (user) {
       if (user) {
@@ -595,7 +589,10 @@
         var header = document.getElementsByTagName("H1");
         header[0].style.fontSize = "30px";
         header[0].innerHTML = "Hi, " + String(name) + "! How are you feeling?";
-        writeUserData(user.uid, name, user.email);
+        database.ref('users/' + user.uid).set({
+          username: name,
+          email: user.email,
+        });
       } else {
         // No user is signed in.
       }
