@@ -580,6 +580,7 @@
     var provider = new firebase.auth.GoogleAuthProvider();
     // Get a reference to the database service
     var database = firebase.database();
+
     function writeUserData(userId, name, email) {
       database.ref('users/' + userId).set({
         username: name,
@@ -592,8 +593,9 @@
         console.log("signed in!");
         var name = user.displayName;
         var header = document.getElementsByTagName("H1");
-        header[0].style.fontSize = "20px";
+        header[0].style.fontSize = "30px";
         header[0].innerHTML = "Hi, " + String(name) + "! How are you feeling?";
+        writeUserData(user.uid, name, user.email);
       } else {
         // No user is signed in.
       }
@@ -607,7 +609,6 @@
         var id = user.uid;
         var name = user.displayName;
         var emailVerified = user.emailVerified;
-        //writeUserData(id, name, emailVerified)
 
 
 
