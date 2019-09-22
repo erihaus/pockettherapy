@@ -20,4 +20,14 @@ var submitClicked = function () {
 	if (selected == "Something else") {
 		window.location.replace("somethingelse.html");
 	}
+	//Check if user logged in, if so, log their emotion to their account
+	var user = firebase.auth().currentUser;
+	var date = new Date();
+	if (user) {
+		database.ref('users/' + user.uid).update({
+			emotions: [yourSelect.options[yourSelect.selectedIndex].value, date.toString().substring(4, 15)],
+		});
+
+		return firebase.database().ref().update(updates);
+	}
 }
