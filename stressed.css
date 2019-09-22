@@ -174,7 +174,8 @@ form {
        
 }
 input {
-        margin-left:75px;
+        width: 350px;
+        height: 15px;
 }
     input[type="submit"] {
 
@@ -198,6 +199,8 @@ input {
     border: solid 1px #ddd;
     border-radius: 15px;
     font-size: 15px;
+    margin-top: 30px;
+    margin-left: 30px;
     color: black;
     background: #ddd;
     font-family: 'arial';
