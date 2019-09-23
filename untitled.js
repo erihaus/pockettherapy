@@ -25,7 +25,10 @@ var submitClicked = function () {
 	var date = new Date();
 	if (user) {
 		database.ref('users/' + user.uid).update({
-			emotions: [yourSelect.options[yourSelect.selectedIndex].value, date.toString().substring(4, 15)],
+			progress: {
+				emotion: yourSelect.options[yourSelect.selectedIndex].value,
+				date: date.toString().substring(4, 15)
+			}
 		});
 
 		return firebase.database().ref().update(updates);
