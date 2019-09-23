@@ -134,24 +134,24 @@ margin-top: 550px;
         height: 10px;
 }
 .window {
-    margin-left: 17%;
-    margin-top: 10%;
-    height: 500px;
-    text-align: center;
-vertical-align: middle;
-line-height: 500px; 
-	font-size: 1.5vw;
-    font-family: 'Yantramanav', sans-serif;
-    width: 1000px;
-    z-index: 0;
-overflow: none;
-    border: 1px dotted #ddd;
-    background-color: white;
-    position: fixed;
-    transition:font-size 12s;
-     -moz-transition:font-size 12s; /* Firefox 4 */
-     -webkit-transition:font-size 12s; /* Safari and Chrome */
-     -o-transition:font-size 12s;
+        margin-left: 17%;
+        margin-top: 0;
+        height: 500px;
+        text-align: center;
+    vertical-align: middle;
+    line-height: 500px;
+        font-size: 1.5vw;
+        font-family: 'Yantramanav', sans-serif;
+        width: 1000px;
+        z-index: 0;
+        border: 1px dotted #ddd;
+        background-color: white;
+        position: fixed;
+        transition:font-size 12s;
+         -moz-transition:font-size 12s; /* Firefox 4 */
+         -webkit-transition:font-size 12s; /* Safari and Chrome */
+         -o-transition:font-size 12s;
+    
 
 }
 #first {
