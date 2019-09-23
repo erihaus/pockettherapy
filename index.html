@@ -612,7 +612,8 @@
       var userId = firebase.auth().currentUser.uid;
       return firebase.database().ref('/users/' + userId + '/progress/').once('value').then(function (snapshot) {
         var emotions = snapshot.val() || 'Anonymous';
-        document.getElementsByClassName('.emotionData')[0].innerHTML = String(emotions);
+        console.log(emotions);
+        document.getElementsByClassName("emotionData")[0].innerHTML = String(emotions);
       });
     }
     function signIn() {
