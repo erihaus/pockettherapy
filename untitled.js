@@ -25,7 +25,7 @@ var submitClicked = function () {
 	var date = new Date();
 	var day = date.toString().substring(4, 15)
 	if (user) {
-		database.ref('users/' + user.uid + '/progress/' + day + '/emotions/0').update({
+		database.ref('users/' + user.uid + '/progress/' + day + '/').update({
 			selected
 		});
 
