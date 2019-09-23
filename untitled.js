@@ -23,12 +23,10 @@ var submitClicked = function () {
 	//Check if user logged in, if so, log their emotion to their account
 	var user = firebase.auth().currentUser;
 	var date = new Date();
+	var day = date.toString().substring(4, 15)
 	if (user) {
-		database.ref('users/' + user.uid).update({
-			progress: {
-				emotion: yourSelect.options[yourSelect.selectedIndex].value,
-				date: date.toString().substring(4, 15)
-			}
+		database.ref('users/' + user.uid + '/progress/' + day + '/emotions/0').update({
+			selected
 		});
 
 		return firebase.database().ref().update(updates);
