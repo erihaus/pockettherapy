@@ -8,14 +8,16 @@ ul {
         color: #9a9a9a;
 }
 #signIn {
-  background-color: rgb(175, 175, 175);
+  background-color: #ffda9e;
   border-radius: 5px;
-  color: white;
+  color: black;
   height: 60px;
   width: 120px;
-  border: 1px solid rgb(160, 160, 160);
   font-weight: bold;
-  font-size: 28px;
+  font-size: 22px;
+}
+#signIn:hover {
+  color: white;
 }
 #heading {
   height: auto;
@@ -23,7 +25,7 @@ ul {
   margin-top: -15px;
   position: absolute;
   width: 250px;
-  margin-left: 41%;
+  margin-left: 33%;
 }
 .tooltip .tooltiptext {
     visibility: hidden;
@@ -510,4 +512,17 @@ font-size: 25px;
   margin-left: 30%;
   display: inline-block;
   margin-right: auto;
+}
+#progress {
+  background-color: #ace8e8;
+  border-radius: 5px;
+  color: black;
+  height: 60px;
+  width: 120px;
+  font-weight: bold;
+  font-size: 22px;
+  float: left;
+}
+#progress:hover {
+  color: white;
 }

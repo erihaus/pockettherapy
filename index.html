@@ -20,6 +20,7 @@
 </head>
 
 <body id="grad">
+  <button id="progress">Progress</button>
   <img id="heading" src="https://preview.ibb.co/j9nsX5/logo3.png">
   <button id="signIn" onclick="signIn()">Sign In </button>
   <div class="intro">
@@ -206,6 +207,9 @@
       </tr>
     </table>
   </div>
+  <div class="emotionData">
+
+  </div>
   <div class="chooseNature">
     <img class="exit" src="https://image.ibb.co/etaaLQ/X.jpg">
     <img id="photos" src="images/montana.jpg" onclick="changeBackground()">
@@ -284,6 +288,7 @@
     $(".page2").hide();
     $(".page3").hide();
     $(".page4").hide();
+    $(".emotionData").hide();
     $(".page5").hide();
     $(".page6").hide();
     $(".page7").hide();
@@ -462,6 +467,11 @@
       $(".chooseNature").hide();
 
     }
+    $("#progress").hover(function () {
+      $(".emotionData").show();
+    }, function () {
+      $(".emotionData").hide();
+    });
     jQuery('.option').on('click', function () {
       var hexCode = $(this).css("background-color");
       changeBackgroundColor(hexCode);
@@ -597,6 +607,13 @@
         // No user is signed in.
       }
     });
+    function updateProgress() {
+      var userId = firebase.auth().currentUser.uid;
+      return firebase.database().ref('/users/' + userId + '/progress/').once('value').then(function (snapshot) {
+        var emotions = snapshot.val() || 'Anonymous';
+        document.getElementsByClassName('.emotionData')[0].innerHTML = String(emotions);
+      });
+    }
     function signIn() {
       firebase.auth().signInWithPopup(provider).then(function (result) {
         // This gives you a Google Access Token. You can use it to access the Google API.
